@@ -81,7 +81,7 @@ public class Funcionario {
 	StringBuilder saidaDados = new StringBuilder();
 	@Override
 	public String toString() {
-		saidaDados.append("Nome:" + nome + "/n" + "Categoria: " + categoria + "/n" + "Salário Base: R$ " + salarioBase + "/n" + "Departamento:" + departamento);
+		saidaDados.append("Nome: " + nome + "\n" + "Categoria: " + categoria + "\n" + "Salário Base: R$ " + salarioBase + "\n" + "Departamento: " + departamento);
 		
 		//return "Funcionario [nome=" + nome + ", categoria=" + categoria + ", salarioBase=" + salarioBase
 			//	+ ", departamento=" + departamento  + "]";

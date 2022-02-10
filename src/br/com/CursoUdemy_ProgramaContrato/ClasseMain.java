@@ -23,7 +23,7 @@ public class ClasseMain {
 		System.out.println();
 		System.out.print("Digite o Departamento: ");
 		departamento.setName(enter.nextLine());
-		// funcionario.setDepartamento(departamento);
+	    funcionario.setDepartamento(departamento);
 		System.out.println();
 		System.out.println("=========== ## REGISTRO FUNCIONÁRIO ## =========== ");
 		System.out.println();
@@ -52,9 +52,9 @@ public class ClasseMain {
 				funcionario.setSalarioBase(enter.nextDouble());
 				System.out.println();
 				Funcionario funcionarioCadastrado = new Funcionario(funcionario.getNome(), funcionario.getCategoria(),
-						funcionario.getSalarioBase(), departamento);
+						funcionario.getSalarioBase(), funcionario.getDepartamento());
 				System.out.println(funcionarioCadastrado.toString());
-
+				System.out.println();
 			}
 			if (menu == 2) {
 				System.out.println("=========== ## CADASTRO DE CONTRATO ## =========== ");
